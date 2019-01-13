@@ -5,27 +5,45 @@ Vue.use(Vuex);
 
 import * as types from './mutation-types';
 
-const savedLists = localStorage.getItem('trollo-lists');
+const savedLists = localStorage.getItem('nnkaigi-lists');
 
 const state = {
   lists: savedLists ? JSON.parse(savedLists) : [
     {
-      title: 'To Do',
+      title: 'Keys',
       cards: [
-        { body: 'English' },
-        { body: 'Mathematics' },
+        { body: 'matter 01' },
+        { body: 'matter 02' },
+        { body: 'matter 03' }
       ]
     },
     {
-      title: 'Next Up',
+      title: 'What',
       cards: [
-        { body: 'Science' }
+        { body: 'hoge' },
+        { body: 'hogehoge' },
       ]
     },
     {
-      title: 'In Progress',
+      title: 'Why',
       cards: []
-    }
+    },
+    {
+      title: 'When',
+      cards: []
+    },
+    {
+      title: 'Where',
+      cards: []
+    },
+    {
+      title: 'Who',
+      cards: []
+    },
+    {
+      title: 'How',
+      cards: []
+    },
   ]
 };
 
@@ -64,7 +82,12 @@ const store = new Vuex.Store({
 });
 
 store.subscribe((mutation, { lists }) => {
-  localStorage.setItem('trollo-lists', JSON.stringify(lists));
+  localStorage.setItem('nnkaigi-lists', JSON.stringify(lists));
 });
 
 export default store;
+
+// document.querySelector(".delete").onclick = function() {
+//   alert();
+// localStorage.clear();
+// };

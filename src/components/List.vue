@@ -74,7 +74,7 @@ export default List;
     width: calc(100% - 20px);
     word-break: break-word;
   }
- 
+
   .cards {
     margin-top: 15px;
     width: 100%;
