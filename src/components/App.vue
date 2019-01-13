@@ -44,6 +44,7 @@ html, body {
 }
 body {
   background-color: #c24558;
+  background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)),url(https://goo.gl/LqKys6) center center / cover no-repeat;
 }
 h1, h2, h3, h4 {
   margin: 0;
