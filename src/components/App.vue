@@ -2,7 +2,7 @@
   <div class="app">
     <header>
       <a href="https://github.com/syumai/trollo">
-        <h1 class="logo">Trollo</h1>
+        <h1 class="logo">nnKaigi</h1>
       </a>
     </header>
     <main>
@@ -100,4 +100,3 @@ h1, h2, h3, h4 {
   }
 }
 </style>
-
