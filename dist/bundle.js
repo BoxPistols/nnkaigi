@@ -22182,7 +22182,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\nhtml, body {\n  width: 100%;\n  height: 100%;\n}\nbody {\n  background-color: #c24558;\n}\nh1, h2, h3, h4 {\n  margin: 0;\n}\n@font-face {\n  font-family: 'Noto Sans Japanese';\n  font-style: normal;\n  font-weight: 700;\n  src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');\n}\n", ""]);
+exports.push([module.i, "\nhtml, body {\n  width: 100%;\n  height: 100%;\n}\nbody {\n  color: #ccc;\n  background-color: #c24558;\n  background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)),url(https://goo.gl/LqKys6) center center / cover no-repeat;\n}\nh1, h2, h3, h4 {\n  margin: 0;\n}\n@font-face {\n  font-family: 'Noto Sans Japanese';\n  font-style: normal;\n  font-weight: 700;\n  src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');\n}\n", ""]);
 
 // exports
 
@@ -22255,7 +22255,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.app[data-v-617ab0be] {\n  font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n  font-weight: 700;\n  color: #242424;\n  width: 100%;\n  height: 100%;\n}\n.app header[data-v-617ab0be] {\n    padding: 0 20px;\n    display: flex;\n    align-items: center;\n    width: calc(100% - 40px);\n    height: 100px;\n}\n.app header a[data-v-617ab0be] {\n      text-decoration: none;\n}\n.app header a h1.logo[data-v-617ab0be] {\n        font-family: 'Pacifico', cursive;\n        font-weight: normal;\n        font-size: 48px;\n        color: #fff;\n}\n.app header a:hover h1.logo[data-v-617ab0be] {\n      opacity: 0.7;\n}\n.app main[data-v-617ab0be] {\n    padding: 0 20px;\n    display: flex;\n    overflow-x: scroll;\n    width: calc(100% - 40px);\n    height: calc(100% - 100px);\n}\n", ""]);
+exports.push([module.i, "\n.app[data-v-617ab0be] {\n  font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n  font-weight: 700;\n  color: #333;\n  width: 100%;\n  height: 100%;\n}\n.app header[data-v-617ab0be] {\n    padding: 0 20px;\n    display: flex;\n    align-items: center;\n    width: calc(100% - 40px);\n    height: 100px;\n}\n.app header a[data-v-617ab0be] {\n      text-decoration: none;\n}\n.app header a h1.logo[data-v-617ab0be] {\n        font-family: 'Pacifico', cursive;\n        font-weight: normal;\n        font-size: 48px;\n        color: #fff;\n}\n.app header a:hover h1.logo[data-v-617ab0be] {\n      opacity: 0.7;\n}\n.app main[data-v-617ab0be] {\n    padding: 0 20px;\n    display: flex;\n    overflow-x: scroll;\n    width: calc(100% - 40px);\n    height: calc(100% - 100px);\n}\n", ""]);
 
 // exports
 
@@ -22615,7 +22615,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card-draft[data-v-1a06cff1] {\n  margin-top: 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  width: 100%;\n}\n.card-draft .text-input[data-v-1a06cff1] {\n    padding: 15px;\n    width: calc(100% - 30px);\n    background-color: #ccc;\n    border-radius: 8px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #242424;\n    cursor: pointer;\n    overflow: overlay;\n}\n.card-draft .text-input[data-v-1a06cff1]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.card-draft .add-button[data-v-1a06cff1] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 8px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #fff;\n}\n.card-draft .add-button[data-v-1a06cff1]:hover {\n    opacity: 0.8;\n}\n.card-draft.active .text-input[data-v-1a06cff1], .card-draft.addable .text-input[data-v-1a06cff1] {\n  background-color: #fff;\n}\n.card-draft.active .add-button[data-v-1a06cff1] {\n  pointer-events: none;\n}\n.card-draft.addable .add-button[data-v-1a06cff1] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.card-draft.addable .add-button[data-v-1a06cff1]:active {\n  background-color: #d76a00;\n}\n", ""]);
+exports.push([module.i, "\n.card-draft[data-v-1a06cff1] {\n  margin-top: 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  width: 100%;\n}\n.card-draft .text-input[data-v-1a06cff1] {\n    padding: 15px;\n    width: calc(100% - 30px);\n    background-color: #ccc;\n    border-radius: 8px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #333;\n    cursor: pointer;\n    overflow: overlay;\n}\n.card-draft .text-input[data-v-1a06cff1]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.card-draft .add-button[data-v-1a06cff1] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 8px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #fff;\n}\n.card-draft .add-button[data-v-1a06cff1]:hover {\n    opacity: 0.8;\n}\n.card-draft.active .text-input[data-v-1a06cff1], .card-draft.addable .text-input[data-v-1a06cff1] {\n  background-color: #fff;\n}\n.card-draft.active .add-button[data-v-1a06cff1] {\n  pointer-events: none;\n}\n.card-draft.addable .add-button[data-v-1a06cff1] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.card-draft.addable .add-button[data-v-1a06cff1]:active {\n  background-color: #d76a00;\n}\n", ""]);
 
 // exports
 
@@ -22845,7 +22845,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.list-draft[data-v-d8aa0bba] {\n  margin: 0 10px auto;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-width: 320px;\n  width: 320px;\n}\n.list-draft .text-input[data-v-d8aa0bba] {\n    padding: 20px 15px;\n    width: calc(100% - 30px);\n    background-color: #ccc;\n    border-radius: 8px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 24px;\n    color: #242424;\n    cursor: pointer;\n    overflow: overlay;\n}\n.list-draft .text-input[data-v-d8aa0bba]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.list-draft .add-button[data-v-d8aa0bba] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 8px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #fff;\n}\n.list-draft .add-button[data-v-d8aa0bba]:hover {\n    opacity: 0.8;\n}\n.list-draft.active .text-input[data-v-d8aa0bba], .card-draft.addable .text-input[data-v-d8aa0bba] {\n  background-color: #fff;\n}\n.list-draft.active .add-button[data-v-d8aa0bba] {\n  pointer-events: none;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba]:active {\n  background-color: #d76a00;\n}\n", ""]);
+exports.push([module.i, "\n.list-draft[data-v-d8aa0bba] {\n  margin: 0 10px auto;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-width: 320px;\n  width: 320px;\n}\n.list-draft .text-input[data-v-d8aa0bba] {\n    padding: 20px 15px;\n    width: calc(100% - 30px);\n    background-color: #ccc;\n    border-radius: 8px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 24px;\n    color: #333;\n    cursor: pointer;\n    overflow: overlay;\n}\n.list-draft .text-input[data-v-d8aa0bba]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.list-draft .add-button[data-v-d8aa0bba] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 8px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #fff;\n}\n.list-draft .add-button[data-v-d8aa0bba]:hover {\n    opacity: 0.8;\n}\n.list-draft.active .text-input[data-v-d8aa0bba], .card-draft.addable .text-input[data-v-d8aa0bba] {\n  background-color: #fff;\n}\n.list-draft.active .add-button[data-v-d8aa0bba] {\n  pointer-events: none;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba]:active {\n  background-color: #d76a00;\n}\n", ""]);
 
 // exports
 
@@ -23009,13 +23009,25 @@ var savedLists = localStorage.getItem('nonainkaigi-lists');
 
 var state = {
   lists: savedLists ? JSON.parse(savedLists) : [{
-    title: 'To Do',
-    cards: [{ body: 'English' }, { body: 'Mathematics' }]
+    title: 'Keys',
+    cards: [{ body: 'matter 01' }, { body: 'matter 02' }, { body: 'matter 03' }]
   }, {
-    title: 'Next Up',
-    cards: [{ body: 'Science' }]
+    title: 'What',
+    cards: [{ body: 'hoge' }, { body: 'hogehoge' }]
   }, {
-    title: 'In Progress',
+    title: 'Why',
+    cards: []
+  }, {
+    title: 'When',
+    cards: []
+  }, {
+    title: 'Where',
+    cards: []
+  }, {
+    title: 'Who',
+    cards: []
+  }, {
+    title: 'How',
     cards: []
   }]
 };
@@ -23070,6 +23082,11 @@ store.subscribe(function (mutation, _ref6) {
 });
 
 exports.default = store;
+
+// document.querySelector(".delete").onclick = function() {
+//   alert();
+// localStorage.clear();
+// };
 
 /***/ })
 /******/ ]);
