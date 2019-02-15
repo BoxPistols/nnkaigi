@@ -10,22 +10,40 @@ const savedLists = localStorage.getItem('nonainkaigi-lists');
 const state = {
   lists: savedLists ? JSON.parse(savedLists) : [
     {
-      title: 'To Do',
+      title: 'Keys',
       cards: [
-        { body: 'English' },
-        { body: 'Mathematics' },
+        { body: 'matter 01' },
+        { body: 'matter 02' },
+        { body: 'matter 03' }
       ]
     },
     {
-      title: 'Next Up',
+      title: 'What',
       cards: [
-        { body: 'Science' }
+        { body: 'hoge' },
+        { body: 'hogehoge' },
       ]
     },
     {
-      title: 'In Progress',
+      title: 'Why',
       cards: []
-    }
+    },
+    {
+      title: 'When',
+      cards: []
+    },
+    {
+      title: 'Where',
+      cards: []
+    },
+    {
+      title: 'Who',
+      cards: []
+    },
+    {
+      title: 'How',
+      cards: []
+    },
   ]
 };
 
@@ -68,3 +86,8 @@ store.subscribe((mutation, { lists }) => {
 });
 
 export default store;
+
+// document.querySelector(".delete").onclick = function() {
+//   alert();
+// localStorage.clear();
+// };

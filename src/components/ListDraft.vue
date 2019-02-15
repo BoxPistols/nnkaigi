@@ -77,7 +77,7 @@ export default ListDraft;
     font-family: "Noto Sans Japanese", "Noto Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: #242424;
+    color: #333;
     cursor: pointer;
     overflow: overlay;
   }
