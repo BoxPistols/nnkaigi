@@ -1,5 +1,5 @@
 {
-  "name": "vue-trollo",
+  "name": "vue-nonainkaigi",
   "version": "0.1.0",
   "description": "Simple Trello clone implemented with Vue.js and Vuex",
   "main": "dist/bundle.js",
@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server",
     "build": "webpack --progress --colors"
   },
-  "repository": "https://github.com/syumai/trollo",
+  "repository": "https://github.com/BoxPistols/nnkaigi",
   "author": "syumai",
   "license": "MIT",
   "devDependencies": {

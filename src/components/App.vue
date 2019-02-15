@@ -1,8 +1,8 @@
 <template>
   <div class="app">
     <header>
-      <a href="https://github.com/syumai/trollo">
-        <h1 class="logo">nnKaigi</h1>
+      <a href="https://github.com/BoxPistols/nnkaigi">
+        <h1 class="logo">NoNaiKaigi</h1>
       </a>
     </header>
     <main>
@@ -62,8 +62,8 @@ h1, h2, h3, h4 {
 <style lang="scss" scoped>
 .app {
   font-family: "Noto Sans Japanese", "Noto Sans", sans-serif;
-  font-weight: 700;
-  color: #242424;
+  font-weight: 400;
+  color: #333;
   width: 100%;
   height: 100%;
 
@@ -77,7 +77,7 @@ h1, h2, h3, h4 {
     a {
       text-decoration: none;
       h1.logo {
-        font-family: 'Pacifico', cursive;
+        font-family: 'Playfair Display', serif;
         font-weight: normal;
         font-size: 48px;
         color: #fff;

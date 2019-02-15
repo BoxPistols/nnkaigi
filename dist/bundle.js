@@ -22956,8 +22956,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("header", [
-      _c("a", { attrs: { href: "https://github.com/syumai/trollo" } }, [
-        _c("h1", { staticClass: "logo" }, [_vm._v("Trollo")])
+      _c("a", { attrs: { href: "https://github.com/BoxPistols/nnkaigi" } }, [
+        _c("h1", { staticClass: "logo" }, [_vm._v("NoNaiKaigi")])
       ])
     ])
   }
@@ -23005,7 +23005,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 _vue2.default.use(_vuex2.default);
 
-var savedLists = localStorage.getItem('trollo-lists');
+var savedLists = localStorage.getItem('nonainkaigi-lists');
 
 var state = {
   lists: savedLists ? JSON.parse(savedLists) : [{
@@ -23066,7 +23066,7 @@ var store = new _vuex2.default.Store({
 store.subscribe(function (mutation, _ref6) {
   var lists = _ref6.lists;
 
-  localStorage.setItem('trollo-lists', JSON.stringify(lists));
+  localStorage.setItem('nonainkaigi-lists', JSON.stringify(lists));
 });
 
 exports.default = store;

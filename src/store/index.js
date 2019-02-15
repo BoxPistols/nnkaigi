@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 import * as types from './mutation-types';
 
-const savedLists = localStorage.getItem('trollo-lists');
+const savedLists = localStorage.getItem('nonainkaigi-lists');
 
 const state = {
   lists: savedLists ? JSON.parse(savedLists) : [
@@ -64,7 +64,7 @@ const store = new Vuex.Store({
 });
 
 store.subscribe((mutation, { lists }) => {
-  localStorage.setItem('trollo-lists', JSON.stringify(lists));
+  localStorage.setItem('nonainkaigi-lists', JSON.stringify(lists));
 });
 
 export default store;
