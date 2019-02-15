@@ -2,7 +2,7 @@
   <div class="app">
     <header>
       <a href="https://github.com/syumai/trollo">
-        <h1 class="logo">nnkaigi</h1>
+        <h1 class="logo">脳内会議</h1>
       </a>
     </header>
     <main>
@@ -43,7 +43,6 @@ html, body {
   height: 100%;
 }
 body {
-  color: #ccc;
   background-color: #c24558;
   background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)),url(https://goo.gl/LqKys6) center center / cover no-repeat;
 }
@@ -65,7 +64,7 @@ h1, h2, h3, h4 {
 .app {
   font-family: "Noto Sans Japanese", "Noto Sans", sans-serif;
   font-weight: 700;
-  color: #333;
+  color: #242424;
   width: 100%;
   height: 100%;
 
