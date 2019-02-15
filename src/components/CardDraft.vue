@@ -81,14 +81,14 @@ export default CardDraft;
   .text-input {
     padding: 15px;
     width: calc(100% - 30px);
-    background-color: #ccc;
-    border-radius: 8px;
+    background-color: #444;
+    border-radius: 4px;
     cursor: pointer;
     border: none;
     font-family: "Noto Sans Japanese", "Noto Sans", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
-    color: #333;
+    color: #ccc;
     cursor: pointer;
     overflow: overlay;
   }
@@ -103,9 +103,9 @@ export default CardDraft;
     padding: 15px 18px;
     background-color: #999;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     font-family: "Noto Sans Japanese", "Noto Sans", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     color: #fff;
   }
@@ -117,7 +117,7 @@ export default CardDraft;
 
 .card-draft.active, .card-draft.addable {
   .text-input {
-    background-color: #fff;
+    // background-color: #fff;
   }
 }
 

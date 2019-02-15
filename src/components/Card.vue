@@ -1,7 +1,8 @@
 <template>
+<div class="cardArea">
   <div class="card" draggable="true" @drop="onDrop" @dragstart="onDragStart" @dragover.prevent>
     <div class="close-button" @click="removeCardFromList">
-      x
+      <img src="/img/close16.png" alt="">
     </div>
     <div class="body">
       {{ body }}
@@ -15,10 +16,14 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex';
+import {
+  mapGetters,
+  mapMutations
+} from 'vuex';
 import * as types from '../store/mutation-types.js';
 
 const Card = {
@@ -42,7 +47,7 @@ const Card = {
       });
     },
     moveCardToRight() {
-      if(this.movableToRight) {
+      if (this.movableToRight) {
         this.moveCardToList({
           from: {
             listIndex: this.$parent.index,
@@ -56,7 +61,7 @@ const Card = {
       }
     },
     moveCardToLeft() {
-      if(this.movableToLeft) {
+      if (this.movableToLeft) {
         this.moveCardToList({
           from: {
             listIndex: this.$parent.index,
@@ -69,7 +74,9 @@ const Card = {
         });
       }
     },
-    onDragStart({ dataTransfer }) {
+    onDragStart({
+      dataTransfer
+    }) {
       dataTransfer.effectAllowed = 'move';
       dataTransfer.setData("application/json", JSON.stringify({
         from: {
@@ -78,13 +85,20 @@ const Card = {
         }
       }));
     },
-    onDrop({ dataTransfer }) {
-      const { from } = JSON.parse(dataTransfer.getData("application/json"));
+    onDrop({
+      dataTransfer
+    }) {
+      const {
+        from
+      } = JSON.parse(dataTransfer.getData("application/json"));
       const to = {
         listIndex: this.$parent.index,
         cardIndex: this.index
       }
-      this.moveCardToList({ from, to });
+      this.moveCardToList({
+        from,
+        to
+      });
     },
     ...mapMutations({
       moveCardToList: types.MOVE_CARD_TO_LIST
@@ -96,62 +110,70 @@ export default Card;
 </script>
 
 <style lang="scss" scoped>
+.cardArea{
+  witdh: auto;
+}
 .card {
-  margin-bottom: 15px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 30px 15px 40px;
-  background-color: #fff;
-  border-radius: 8px;
-  width: calc(100% - 30px);
-  cursor: pointer;
-
-  .close-button {
-    position: absolute;
-    top: 6px;
-    right: 15px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-
-  .close-button:hover {
-    opacity: 0.8;
-  }
-
-  .body {
-    font-size: 18px;
-    width: 100%;
-    word-wrap: break-word;
-  }
-
-  .arrows {
+    margin: 10px 0 18px;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    align-items: center;
+    padding: 10px 12px 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: calc(100% - 24px);
+    min-height: 30px;
+    cursor: pointer;
 
-    .arrow {
-      margin: 10px;
-      font-size: 18px;
-      color: #FF003F;
-      cursor: pointer;
+    .close-button img{
+        position: absolute;
+        display: block;
+        width: 14px;
+        top: 6px;
+        right: 6px;
+        font-size: 22px;
+        opacity: .8;
+        cursor: pointer;
     }
 
-    .arrow:hover {
-      opacity: 0.8;
+    .close-button:hover {
+        opacity: 0.8;
     }
 
-    .arrow.disabled {
-      color: #999;
-      pointer-events: none;
+    .body {
+        font-size: 16px;
+        width: 100%;
+        word-wrap: break-word;
+        font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     }
-  }
+
+    .arrows {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        .arrow {
+            margin: 15px 10px 5px;
+            font-size: 14px;
+            color: #cc003F;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            opacity: 0.8;
+        }
+
+        .arrow.disabled {
+            color: #bbb;
+            pointer-events: none;
+        }
+    }
 }
 
 .card:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div class="app">
     <header>
-      <a href="https://github.com/BoxPistols/nnkaigi">
-        <h1 class="logo">NoNaiKaigi</h1>
+      <a href="#">
+        <h1 class="logo">脳内会議</h1>
       </a>
     </header>
     <main>
@@ -43,7 +43,7 @@ html, body {
   height: 100%;
 }
 body {
-  background-color: #fff;
+  background-color: #345;
   /* background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)),url(https://goo.gl/LqKys6) center center / cover no-repeat; */
 }
 h1, h2, h3, h4 {
@@ -53,7 +53,7 @@ h1, h2, h3, h4 {
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),
   url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),
   url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');
@@ -67,21 +67,27 @@ h1, h2, h3, h4 {
   color: #333;
   width: 100%;
   height: 100%;
+  max-height: 100vh;
 
   header {
     padding: 0 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: calc(100% - 40px);
     height: 100px;
 
     a {
       text-decoration: none;
       h1.logo {
-        font-family: 'Playfair Display', serif;
-        font-weight: normal;
-        font-size: 48px;
-        color: #444;
+        // font-family: 'Playfair Display', serif;
+        font-family: serif;
+        ttext-align: center;
+        font-weight: 100;
+        font-size: 2.5rem;
+        color: #cde;
+        // margin: 20px 5px 5px 10px;
+        margin: 20px auto 10px;
       }
     }
 
@@ -95,7 +101,9 @@ h1, h2, h3, h4 {
   main {
     padding: 0 20px;
     display: flex;
-    overflow-x: scroll;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // overflow-x: scroll;
     width: calc(100% - 40px);
     height: calc(100% - 100px);
   }

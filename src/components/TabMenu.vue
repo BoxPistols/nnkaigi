@@ -44,7 +44,7 @@ li {
   margin-right:10px;
   font-size: 14px;
   background-color: skyblue;
-  border-radius: 8px;
+  border-radius: 4px;
   position: relative;
 }
 
