@@ -111,20 +111,8 @@ h4 {
 
     main {
         padding: 0 20px;
-
-        // display: flex;
-        // flex-wrap: wrap;
-
-        // justify-content: center;
-        // overflow-x: scroll;
-
-        // width: calc(100% - 40px);
-        // height: calc(100% - 100px);
-
-        column-width: 260px;
+        column-width: 270px;
         column-gap: 1em;
-        margin: auto;
-
     }
 }
 </style>
