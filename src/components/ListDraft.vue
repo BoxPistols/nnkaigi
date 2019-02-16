@@ -64,12 +64,13 @@ export default ListDraft;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-width: 320px;
-  width: 320px;
+  // min-width: 320px;
+  width: 250px;
 
   .text-input {
     padding: 20px 15px;
-    width: calc(100% - 30px);
+    width: 250px;
+    box-sizing: border-box;
     background-color: #ccc;
     border-radius: 4px;
     cursor: pointer;

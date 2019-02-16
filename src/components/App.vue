@@ -115,7 +115,7 @@ h1, h2, h3, h4 {
     // width: calc(100% - 40px);
     // height: calc(100% - 100px);
 
-    column-width: 240px;
+    column-width: 260px;
     column-gap: 1em;
     margin: auto;
 
