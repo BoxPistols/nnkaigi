@@ -35,7 +35,9 @@ const App = {
 }
 
 export default App;
+
 </script>
+
 
 <style>
 html, body {
@@ -59,35 +61,38 @@ h1, h2, h3, h4 {
   url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');
 }
 </style>
-
 <style lang="scss" scoped>
 .app {
   font-family: "Noto Sans Japanese", "Noto Sans", sans-serif;
   font-weight: 400;
   color: #333;
   width: 100%;
-  height: 100%;
+  height: auto;
   max-height: 100vh;
 
   header {
     padding: 0 20px;
+    margin: 0px auto 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(100% - 40px);
     height: 100px;
+    border-bottom: 1px solid #ccc;
 
     a {
       text-decoration: none;
+      ;
       h1.logo {
         // font-family: 'Playfair Display', serif;
         font-family: serif;
-        ttext-align: center;
+        text-align: center;
         font-weight: 100;
         font-size: 2.5rem;
         color: #cde;
         // margin: 20px 5px 5px 10px;
         margin: 20px auto 10px;
+
       }
     }
 
@@ -100,12 +105,20 @@ h1, h2, h3, h4 {
 
   main {
     padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
+
+    // display: flex;
+    // flex-wrap: wrap;
+
     // justify-content: center;
     // overflow-x: scroll;
-    width: calc(100% - 40px);
-    height: calc(100% - 100px);
+
+    // width: calc(100% - 40px);
+    // height: calc(100% - 100px);
+
+    column-width: 240px;
+    column-gap: 1em;
+    margin: auto;
+
   }
 }
 </style>

@@ -47,22 +47,33 @@ export default List;
 .list {
   margin: 0 10px 20px;
   position: relative;
-  display: flex;
-  flex-direction: column;
+
+  // display: flex;
+  // flex-direction: column;
+
   // align-items: flex-start;
   // min-width: 290px;
   // width: 290px;
-  min-height: 400px;
+
+  // min-heigh: 400px;
   max-height: 40vh;
   background-color: #e0e0e0;
   border-radius: 4px;
   padding: 15px;
-  max-width: 240px;
+  max-width: 280px;
   overflow-y: scroll;
 
-  &:nth-child(1){
+  display: inline-block;
+  // width: 100%;
+  background: #efefef;
+
+
+  &:first-of-type{
     // color: teal;
     background-color: rgb(191, 237, 162);
+    height: 100%;
+    max-height: 100vh;
+    display: block;
   }
   &:nth-child(2){
     // color: orange;
