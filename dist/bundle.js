@@ -16275,6 +16275,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
 
 var _vuex = __webpack_require__(46);
 
@@ -16350,7 +16352,10 @@ var Card = {
         listIndex: this.$parent.index,
         cardIndex: this.index
       };
-      this.moveCardToList({ from: from, to: to });
+      this.moveCardToList({
+        from: from,
+        to: to
+      });
     }
   }, (0, _vuex.mapMutations)({
     moveCardToList: types.MOVE_CARD_TO_LIST
@@ -22182,7 +22187,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\nhtml, body {\n  width: 100%;\n  height: 100%;\n}\nbody {\n  color: #ccc;\n  background-color: #c24558;\n  background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)),url(https://goo.gl/LqKys6) center center / cover no-repeat;\n}\nh1, h2, h3, h4 {\n  margin: 0;\n}\n@font-face {\n  font-family: 'Noto Sans Japanese';\n  font-style: normal;\n  font-weight: 700;\n  src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');\n}\n", ""]);
+exports.push([module.i, "\nhtml, body {\n  width: 100%;\n  height: 100%;\n}\nbody {\n  background-color: #345;\n  /* background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)),url(https://goo.gl/LqKys6) center center / cover no-repeat; */\n}\nh1, h2, h3, h4 {\n  margin: 0;\n}\n@font-face {\n  font-family: 'Noto Sans Japanese';\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),\n  url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');\n}\n", ""]);
 
 // exports
 
@@ -22255,7 +22260,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.app[data-v-617ab0be] {\n  font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n  font-weight: 700;\n  color: #333;\n  width: 100%;\n  height: 100%;\n}\n.app header[data-v-617ab0be] {\n    padding: 0 20px;\n    display: flex;\n    align-items: center;\n    width: calc(100% - 40px);\n    height: 100px;\n}\n.app header a[data-v-617ab0be] {\n      text-decoration: none;\n}\n.app header a h1.logo[data-v-617ab0be] {\n        font-family: 'Pacifico', cursive;\n        font-weight: normal;\n        font-size: 48px;\n        color: #fff;\n}\n.app header a:hover h1.logo[data-v-617ab0be] {\n      opacity: 0.7;\n}\n.app main[data-v-617ab0be] {\n    padding: 0 20px;\n    display: flex;\n    overflow-x: scroll;\n    width: calc(100% - 40px);\n    height: calc(100% - 100px);\n}\n", ""]);
+exports.push([module.i, "\n.app[data-v-617ab0be] {\n  font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n  font-weight: 400;\n  color: #333;\n  width: 100%;\n  height: auto;\n  max-height: 100vh;\n}\n.app header[data-v-617ab0be] {\n    padding: 0 20px;\n    margin: 0px auto 30px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: calc(100% - 40px);\n    height: 100px;\n    border-bottom: 1px solid #ccc;\n}\n.app header a[data-v-617ab0be] {\n      text-decoration: none;\n}\n.app header a h1.logo[data-v-617ab0be] {\n        font-family: serif;\n        text-align: center;\n        font-weight: 100;\n        font-size: 2.5rem;\n        color: #cde;\n        margin: 20px auto 10px;\n}\n.app header a:hover h1.logo[data-v-617ab0be] {\n      opacity: 0.7;\n}\n.app main[data-v-617ab0be] {\n    padding: 0 20px;\n    column-width: 240px;\n    column-gap: 1em;\n    margin: auto;\n}\n", ""]);
 
 // exports
 
@@ -22353,7 +22358,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.list[data-v-264bddce] {\n  margin: 0 10px auto;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-width: 290px;\n  width: 290px;\n  background-color: #e0e0e0;\n  border-radius: 8px;\n  padding: 15px;\n}\n.list .close-button[data-v-264bddce] {\n    position: absolute;\n    top: 6px;\n    right: 14px;\n    font-size: 28px;\n    cursor: pointer;\n}\n.list .close-button[data-v-264bddce]:hover {\n    opacity: 0.8;\n}\n.list .title[data-v-264bddce] {\n    margin: 5px 0;\n    font-size: 24px;\n    width: calc(100% - 20px);\n    word-break: break-word;\n}\n.list .cards[data-v-264bddce] {\n    margin-top: 15px;\n    width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.list[data-v-264bddce] {\n  margin: 0 10px 20px;\n  position: relative;\n  max-height: 40vh;\n  background-color: #e0e0e0;\n  border-radius: 4px;\n  padding: 15px;\n  max-width: 280px;\n  overflow-y: scroll;\n  display: inline-block;\n  background: #efefef;\n}\n.list[data-v-264bddce]:first-of-type {\n    background-color: #bfeda2;\n    height: 100%;\n    max-height: 100vh;\n    display: block;\n}\n.list[data-v-264bddce]:nth-child(2) {\n    background-color: #f6ce80;\n}\n.list[data-v-264bddce]:nth-child(3) {\n    background-color: #80daf6;\n}\n.list[data-v-264bddce]:nth-child(4) {\n    background-color: #f18770;\n}\n.list[data-v-264bddce]:nth-child(5) {\n    background-color: #de90ee;\n}\n.list[data-v-264bddce]:nth-child(6) {\n    background-color: #7fe7d7;\n}\n.list[data-v-264bddce]:nth-child(7) {\n    background-color: #e3de6b;\n}\n.list .close-button[data-v-264bddce] {\n    position: absolute;\n    top: 6px;\n    right: 14px;\n    font-size: 28px;\n    cursor: pointer;\n}\n.list .close-button[data-v-264bddce]:hover {\n    opacity: 0.8;\n}\n.list .title[data-v-264bddce] {\n    font-size: 24px;\n    width: calc(100% - 20px);\n    word-break: break-word;\n    margin: 0;\n    padding: 0;\n    line-height: 1;\n}\n.list .cards[data-v-264bddce] {\n    margin-top: 15px;\n    width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -22451,7 +22456,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card[data-v-54cdc180] {\n  margin-bottom: 15px;\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding: 30px 15px 40px;\n  background-color: #fff;\n  border-radius: 8px;\n  width: calc(100% - 30px);\n  cursor: pointer;\n}\n.card .close-button[data-v-54cdc180] {\n    position: absolute;\n    top: 6px;\n    right: 15px;\n    font-size: 22px;\n    cursor: pointer;\n}\n.card .close-button[data-v-54cdc180]:hover {\n    opacity: 0.8;\n}\n.card .body[data-v-54cdc180] {\n    font-size: 18px;\n    width: 100%;\n    word-wrap: break-word;\n}\n.card .arrows[data-v-54cdc180] {\n    display: flex;\n    justify-content: space-between;\n    position: absolute;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n}\n.card .arrows .arrow[data-v-54cdc180] {\n      margin: 10px;\n      font-size: 18px;\n      color: #FF003F;\n      cursor: pointer;\n}\n.card .arrows .arrow[data-v-54cdc180]:hover {\n      opacity: 0.8;\n}\n.card .arrows .arrow.disabled[data-v-54cdc180] {\n      color: #999;\n      pointer-events: none;\n}\n.card[data-v-54cdc180]:last-child {\n  margin-bottom: 0;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n.cardArea[data-v-54cdc180] {\n  witdh: auto;\n}\n.card[data-v-54cdc180] {\n  margin: 10px 0 18px;\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding: 10px 12px 25px;\n  background-color: #fff;\n  border-radius: 4px;\n  width: calc(100% - 24px);\n  min-height: 30px;\n  cursor: pointer;\n}\n.card .close-button img[data-v-54cdc180] {\n    position: absolute;\n    display: block;\n    width: 14px;\n    top: 6px;\n    right: 6px;\n    font-size: 22px;\n    opacity: .8;\n    cursor: pointer;\n}\n.card .close-button[data-v-54cdc180]:hover {\n    opacity: 0.8;\n}\n.card .body[data-v-54cdc180] {\n    font-size: 16px;\n    width: 100%;\n    word-wrap: break-word;\n    font-family: \"\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4   Pro W3\", \"Hiragino Kaku Gothic Pro\", \"\\30E1\\30A4\\30EA\\30AA\", Meiryo, Osaka, \"\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF\", \"MS PGothic\", sans-serif;\n}\n.card .arrows[data-v-54cdc180] {\n    display: flex;\n    justify-content: space-between;\n    position: absolute;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n}\n.card .arrows .arrow[data-v-54cdc180] {\n      margin: 15px 10px 5px;\n      font-size: 14px;\n      color: #cc003F;\n      cursor: pointer;\n}\n.card .arrows .arrow[data-v-54cdc180]:hover {\n      opacity: 0.8;\n}\n.card .arrows .arrow.disabled[data-v-54cdc180] {\n      color: #bbb;\n      pointer-events: none;\n}\n.card[data-v-54cdc180]:last-child {\n  margin-bottom: 0;\n}\n", ""]);
 
 // exports
 
@@ -22465,51 +22470,56 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "card",
-      attrs: { draggable: "true" },
-      on: {
-        drop: _vm.onDrop,
-        dragstart: _vm.onDragStart,
-        dragover: function($event) {
-          $event.preventDefault()
+  return _c("div", { staticClass: "cardArea" }, [
+    _c(
+      "div",
+      {
+        staticClass: "card",
+        attrs: { draggable: "true" },
+        on: {
+          drop: _vm.onDrop,
+          dragstart: _vm.onDragStart,
+          dragover: function($event) {
+            $event.preventDefault()
+          }
         }
-      }
-    },
-    [
-      _c(
-        "div",
-        { staticClass: "close-button", on: { click: _vm.removeCardFromList } },
-        [_vm._v("\n    x\n  ")]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "body" }, [
-        _vm._v("\n    " + _vm._s(_vm.body) + "\n  ")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "arrows" }, [
+      },
+      [
         _c(
           "div",
           {
-            class: ["arrow", "left", _vm.movableToLeft ? "" : "disabled"],
-            on: { click: _vm.moveCardToLeft }
+            staticClass: "close-button",
+            on: { click: _vm.removeCardFromList }
           },
-          [_vm._v("\n      ←\n    ")]
+          [_c("img", { attrs: { src: "/img/close16.png", alt: "" } })]
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            class: ["arrow", "right", _vm.movableToRight ? "" : "disabled"],
-            on: { click: _vm.moveCardToRight }
-          },
-          [_vm._v("\n      →\n    ")]
-        )
-      ])
-    ]
-  )
+        _c("div", { staticClass: "body" }, [
+          _vm._v("\n      " + _vm._s(_vm.body) + "\n    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "arrows" }, [
+          _c(
+            "div",
+            {
+              class: ["arrow", "left", _vm.movableToLeft ? "" : "disabled"],
+              on: { click: _vm.moveCardToLeft }
+            },
+            [_vm._v("\n        ←\n      ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              class: ["arrow", "right", _vm.movableToRight ? "" : "disabled"],
+              on: { click: _vm.moveCardToRight }
+            },
+            [_vm._v("\n        →\n      ")]
+          )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -22615,7 +22625,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.card-draft[data-v-1a06cff1] {\n  margin-top: 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  width: 100%;\n}\n.card-draft .text-input[data-v-1a06cff1] {\n    padding: 15px;\n    width: calc(100% - 30px);\n    background-color: #ccc;\n    border-radius: 8px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #333;\n    cursor: pointer;\n    overflow: overlay;\n}\n.card-draft .text-input[data-v-1a06cff1]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.card-draft .add-button[data-v-1a06cff1] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 8px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #fff;\n}\n.card-draft .add-button[data-v-1a06cff1]:hover {\n    opacity: 0.8;\n}\n.card-draft.active .text-input[data-v-1a06cff1], .card-draft.addable .text-input[data-v-1a06cff1] {\n  background-color: #fff;\n}\n.card-draft.active .add-button[data-v-1a06cff1] {\n  pointer-events: none;\n}\n.card-draft.addable .add-button[data-v-1a06cff1] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.card-draft.addable .add-button[data-v-1a06cff1]:active {\n  background-color: #d76a00;\n}\n", ""]);
+exports.push([module.i, "\n.card-draft[data-v-1a06cff1] {\n  margin-top: 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  width: 100%;\n}\n.card-draft .text-input[data-v-1a06cff1] {\n    padding: 15px;\n    width: calc(100% - 30px);\n    background-color: #444;\n    border-radius: 4px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 400;\n    font-size: 18px;\n    color: #ccc;\n    cursor: pointer;\n    overflow: overlay;\n}\n.card-draft .text-input[data-v-1a06cff1]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.card-draft .add-button[data-v-1a06cff1] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 4px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 400;\n    font-size: 18px;\n    color: #fff;\n}\n.card-draft .add-button[data-v-1a06cff1]:hover {\n    opacity: 0.8;\n}\n.card-draft.active .add-button[data-v-1a06cff1] {\n  pointer-events: none;\n}\n.card-draft.addable .add-button[data-v-1a06cff1] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.card-draft.addable .add-button[data-v-1a06cff1]:active {\n  background-color: #d76a00;\n}\n", ""]);
 
 // exports
 
@@ -22718,7 +22728,7 @@ var render = function() {
       _c(
         "div",
         { staticClass: "close-button", on: { click: _vm.removeList } },
-        [_vm._v("\n    x\n  ")]
+        [_c("img", { attrs: { src: "/img/close16.png", alt: "" } })]
       ),
       _vm._v(" "),
       _c("div", { staticClass: "title" }, [
@@ -22845,7 +22855,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.list-draft[data-v-d8aa0bba] {\n  margin: 0 10px auto;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-width: 320px;\n  width: 320px;\n}\n.list-draft .text-input[data-v-d8aa0bba] {\n    padding: 20px 15px;\n    width: calc(100% - 30px);\n    background-color: #ccc;\n    border-radius: 8px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 24px;\n    color: #333;\n    cursor: pointer;\n    overflow: overlay;\n}\n.list-draft .text-input[data-v-d8aa0bba]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.list-draft .add-button[data-v-d8aa0bba] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 8px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    color: #fff;\n}\n.list-draft .add-button[data-v-d8aa0bba]:hover {\n    opacity: 0.8;\n}\n.list-draft.active .text-input[data-v-d8aa0bba], .card-draft.addable .text-input[data-v-d8aa0bba] {\n  background-color: #fff;\n}\n.list-draft.active .add-button[data-v-d8aa0bba] {\n  pointer-events: none;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba]:active {\n  background-color: #d76a00;\n}\n", ""]);
+exports.push([module.i, "\n.list-draft[data-v-d8aa0bba] {\n  margin: 0 10px auto;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-width: 320px;\n  width: 320px;\n}\n.list-draft .text-input[data-v-d8aa0bba] {\n    padding: 20px 15px;\n    width: calc(100% - 30px);\n    background-color: #ccc;\n    border-radius: 4px;\n    cursor: pointer;\n    border: none;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 400;\n    font-size: 24px;\n    color: #333;\n    cursor: pointer;\n    overflow: overlay;\n}\n.list-draft .text-input[data-v-d8aa0bba]:focus {\n    outline: 0;\n    cursor: initial;\n}\n.list-draft .add-button[data-v-d8aa0bba] {\n    margin-top: 15px;\n    padding: 15px 18px;\n    background-color: #999;\n    border: none;\n    border-radius: 4px;\n    font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n    font-weight: 400;\n    font-size: 18px;\n    color: #fff;\n}\n.list-draft .add-button[data-v-d8aa0bba]:hover {\n    opacity: 0.8;\n}\n.list-draft.active .text-input[data-v-d8aa0bba], .card-draft.addable .text-input[data-v-d8aa0bba] {\n  background-color: #fff;\n}\n.list-draft.active .add-button[data-v-d8aa0bba] {\n  pointer-events: none;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba] {\n  background-color: #ffa955;\n  pointer-events: auto;\n  cursor: pointer;\n}\n.list-draft.addable .add-button[data-v-d8aa0bba]:active {\n  background-color: #d76a00;\n}\n", ""]);
 
 // exports
 
@@ -22956,8 +22966,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("header", [
-      _c("a", { attrs: { href: "https://github.com/BoxPistols/nnkaigi" } }, [
-        _c("h1", { staticClass: "logo" }, [_vm._v("NoNaiKaigi")])
+      _c("a", { attrs: { href: "#" } }, [
+        _c("h1", { staticClass: "logo" }, [_vm._v("脳内会議")])
       ])
     ])
   }
