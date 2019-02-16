@@ -65,11 +65,11 @@ export default ListDraft;
   flex-direction: column;
   align-items: flex-start;
   // min-width: 320px;
-  width: 250px;
+  width: 280px;
 
   .text-input {
     padding: 20px 15px;
-    width: 250px;
+    width: 270px;
     box-sizing: border-box;
     background-color: #ccc;
     border-radius: 4px;

@@ -76,11 +76,11 @@ export default CardDraft;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  // width: 100%;
 
   .text-input {
     padding: 15px;
-    width: calc(100% - 30px);
+    // width: calc(100% - 30px);
     background-color: #444;
     border-radius: 4px;
     cursor: pointer;
