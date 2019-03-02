@@ -113,8 +113,9 @@ h4 {
 
     main {
         padding: 0 20px;
-        column-width: 270px;
+        // column-width: 270px;
         column-gap: 1em;
+        display: inline-flex;
     }
     #clear{
       position: absolute;

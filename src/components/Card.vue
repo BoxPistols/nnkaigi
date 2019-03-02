@@ -1,9 +1,11 @@
 <template>
 <div class="cardArea">
   <div class="card" draggable="true" @drop="onDrop" @dragstart="onDragStart" @dragover.prevent>
+
     <div class="close-button" @click="removeCardFromList">
       <img src="/img/close16.png" alt="">
     </div>
+
     <div class="body">
       {{ body }}
     </div>
@@ -110,8 +112,8 @@ export default Card;
 </script>
 
 <style lang="scss" scoped>
-.cardArea{
-  witdh: auto;
+.cardArea {
+    witdh: auto;
 }
 .card {
     margin: 10px 0 18px;
@@ -125,14 +127,14 @@ export default Card;
     min-height: 30px;
     cursor: pointer;
 
-    .close-button img{
+    .close-button img {
         position: absolute;
         display: block;
         width: 14px;
         top: 6px;
         right: 6px;
         font-size: 22px;
-        opacity: .8;
+        opacity: 0.8;
         cursor: pointer;
     }
 
@@ -144,7 +146,7 @@ export default Card;
         font-size: 16px;
         width: 100%;
         word-wrap: break-word;
-        font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     }
 
     .arrows {
@@ -156,14 +158,23 @@ export default Card;
         width: 100%;
 
         .arrow {
-            margin: 15px 10px 5px;
-            font-size: 14px;
-            color: #cc003F;
+            // margin: 15px 10px 5px;
+            // font-size: 14px;
+            // color: #cc003F;
+            // cursor: pointer;
+            margin: 0 -7px;
+            font-size: 16px;
+            color: #ffb241;
             cursor: pointer;
+            transform: scale(1,1.5);
+            padding: 1px 8px 2px;
+            transition:.2s;
         }
 
         .arrow:hover {
-            opacity: 0.8;
+            // opacity: 0.8;
+            cursor: pointer;
+            background: rgba(236, 244, 251, 0.84);
         }
 
         .arrow.disabled {

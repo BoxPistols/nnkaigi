@@ -16,12 +16,12 @@ new Vue({
 
 
 $("#clear").click(function() {
-  var retVal = confirm("完全に消去されます。全データ消去しますか? ");
+  var retVal = confirm("完全に消去/初期化されます。消去を実行しますか? ");
   if (retVal == true) {
     localStorage.clear();
     $('nonainkaigi-lists').val('');
     localStorage.removeItem('nonainkaigi-lists');
-    alert("削除しました");
+    alert("消去/初期化しました");
     location.reload();
   } else {
     return false;
