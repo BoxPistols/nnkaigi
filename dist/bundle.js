@@ -16150,6 +16150,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
 
 var _List = __webpack_require__(349);
 
@@ -16236,14 +16238,33 @@ var List = {
   },
   methods: {
     removeList: function removeList() {
-      this.$store.commit(types.REMOVE_LIST, {
-        listIndex: this.index
-      });
+      //var listIndex = this.index;
+      var check = confirm('他のリストも削除される事があります。削除しますか？');
+      if (check === true) {
+        this.$store.commit(types.REMOVE_LIST, {
+          listIndex: this.index
+        });
+      }
     }
   }
-};
 
-exports.default = List;
+  // methods: {
+  //     deleteToDo(id) {
+  //         var deleteIndex = '';
+  //         var check = confirm('本当に削除しますか？');
+  //         if (check === true) {    //アラートでOKが押下されたら
+  //             this.list.some(function (value, index) {
+  //                 if (value.id === id) {
+  //                     deleteIndex = index;
+  //                 }
+  //             });
+  //             this.list.splice(deleteIndex, 1);
+  //         }
+  //     },
+  // }
+
+
+};exports.default = List;
 
 /***/ }),
 /* 135 */
@@ -16257,6 +16278,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; //
+//
+//
 //
 //
 //
@@ -21838,7 +21861,22 @@ new _vue2.default({
   el: '#app',
   store: _store2.default,
   template: '<App/>',
-  components: { App: _App2.default }
+  components: {
+    App: _App2.default
+  }
+});
+
+$("#clear").click(function () {
+  var retVal = confirm("完全に消去/初期化されます。消去を実行しますか? ");
+  if (retVal == true) {
+    localStorage.clear();
+    $('nonainkaigi-lists').val('');
+    localStorage.removeItem('nonainkaigi-lists');
+    alert("消去/初期化しました");
+    location.reload();
+  } else {
+    return false;
+  }
 });
 
 /***/ }),
@@ -22260,7 +22298,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.app[data-v-617ab0be] {\n  font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n  font-weight: 400;\n  color: #333;\n  width: 100%;\n  height: auto;\n  max-height: 100vh;\n}\n.app header[data-v-617ab0be] {\n    padding: 0 20px 10px;\n    margin: 0 auto 30px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: calc(100% - 40px);\n    height: 60px;\n    border-bottom: 1px solid #ccc;\n}\n.app header a[data-v-617ab0be] {\n      text-decoration: none;\n}\n.app header a h1.logo[data-v-617ab0be] {\n        font-family: serif;\n        text-align: center;\n        font-weight: 100;\n        font-size: 2.5rem;\n        color: #cde;\n        margin: 20px auto 10px;\n}\n.app header a:hover h1.logo[data-v-617ab0be] {\n      opacity: 0.7;\n}\n.app main[data-v-617ab0be] {\n    padding: 0 20px;\n    column-width: 270px;\n    column-gap: 1em;\n}\n", ""]);
+exports.push([module.i, "\n.app[data-v-617ab0be] {\n  font-family: \"Noto Sans Japanese\", \"Noto Sans\", sans-serif;\n  font-weight: 400;\n  color: #333;\n  width: 100%;\n  height: auto;\n  max-height: 100vh;\n}\n.app header[data-v-617ab0be] {\n    padding: 0 20px 10px;\n    margin: 0 auto 30px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: calc(100% - 40px);\n    height: 60px;\n    border-bottom: 1px solid #ccc;\n}\n.app header a[data-v-617ab0be] {\n      text-decoration: none;\n}\n.app header a h1.logo[data-v-617ab0be] {\n        font-family: serif;\n        text-align: center;\n        font-weight: 100;\n        font-size: 2.5rem;\n        color: #cde;\n        margin: 20px auto 10px;\n}\n.app header a:hover h1.logo[data-v-617ab0be] {\n      opacity: 0.7;\n}\n.app main[data-v-617ab0be] {\n    padding: 0 20px;\n    column-gap: 1em;\n    display: inline-flex;\n}\n.app #clear[data-v-617ab0be] {\n    position: absolute;\n    top: 15px;\n    right: 15px;\n    cursor: pointer;\n    border: 1px solid #cde;\n    color: #cde;\n    padding: 10px 25px;\n    border-radius: 3px;\n}\n", ""]);
 
 // exports
 
@@ -22358,7 +22396,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n.list[data-v-264bddce] {\n  margin: 0 10px 20px;\n  position: relative;\n  max-height: 40vh;\n  background-color: #e0e0e0;\n  border-radius: 4px;\n  padding: 15px;\n  max-width: 280px;\n  overflow-y: scroll;\n  display: inline-block;\n  background: #efefef;\n}\n.list[data-v-264bddce]:first-of-type {\n    background-color: #bfeda2;\n    height: 100%;\n    max-height: 100vh;\n    display: block;\n}\n.list[data-v-264bddce]:nth-child(2) {\n    background-color: #f6ce80;\n}\n.list[data-v-264bddce]:nth-child(3) {\n    background-color: #80daf6;\n}\n.list[data-v-264bddce]:nth-child(4) {\n    background-color: #f18770;\n}\n.list[data-v-264bddce]:nth-child(5) {\n    background-color: #de90ee;\n}\n.list[data-v-264bddce]:nth-child(6) {\n    background-color: #7fe7d7;\n}\n.list[data-v-264bddce]:nth-child(7) {\n    background-color: #e3de6b;\n}\n.list .close-button[data-v-264bddce] {\n    position: absolute;\n    top: 6px;\n    right: 14px;\n    font-size: 28px;\n    cursor: pointer;\n}\n.list .close-button[data-v-264bddce]:hover {\n    opacity: 0.8;\n}\n.list .title[data-v-264bddce] {\n    font-size: 24px;\n    width: calc(100% - 20px);\n    word-break: break-word;\n    margin: 0;\n    padding: 0;\n    line-height: 1;\n}\n.list .cards[data-v-264bddce] {\n    margin-top: 15px;\n    width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.list[data-v-264bddce] {\n  margin: 0 10px 20px;\n  position: relative;\n  min-height: 60vh;\n  background-color: #e0e0e0;\n  border-radius: 4px;\n  padding: 15px;\n  max-width: 280px;\n  overflow-y: scroll;\n  display: inline-block;\n  background: #efefef;\n}\n.list[data-v-264bddce]:first-of-type {\n    background-color: #bfeda2;\n    height: 100%;\n    max-height: 100vh;\n}\n.list[data-v-264bddce]:nth-child(2) {\n    background-color: #f6ce80;\n}\n.list[data-v-264bddce]:nth-child(3) {\n    background-color: #80daf6;\n}\n.list[data-v-264bddce]:nth-child(4) {\n    background-color: #f18770;\n}\n.list[data-v-264bddce]:nth-child(5) {\n    background-color: #de90ee;\n}\n.list[data-v-264bddce]:nth-child(6) {\n    background-color: #7fe7d7;\n}\n.list[data-v-264bddce]:nth-child(7) {\n    background-color: #e3de6b;\n}\n.list .close-button[data-v-264bddce] {\n    position: absolute;\n    top: 6px;\n    right: 14px;\n    font-size: 28px;\n    cursor: pointer;\n}\n.list .close-button[data-v-264bddce]:hover {\n    opacity: 0.8;\n}\n.list .title[data-v-264bddce] {\n    font-size: 24px;\n    width: calc(100% - 20px);\n    word-break: break-word;\n    margin: 0;\n    padding: 0;\n    line-height: 1;\n}\n.list .cards[data-v-264bddce] {\n    margin-top: 15px;\n    width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -22456,7 +22494,7 @@ exports = module.exports = __webpack_require__(47)(undefined);
 
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n.cardArea[data-v-54cdc180] {\n  witdh: auto;\n}\n.card[data-v-54cdc180] {\n  margin: 10px 0 18px;\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding: 10px 12px 25px;\n  background-color: #fff;\n  border-radius: 4px;\n  width: calc(100% - 24px);\n  min-height: 30px;\n  cursor: pointer;\n}\n.card .close-button img[data-v-54cdc180] {\n    position: absolute;\n    display: block;\n    width: 14px;\n    top: 6px;\n    right: 6px;\n    font-size: 22px;\n    opacity: .8;\n    cursor: pointer;\n}\n.card .close-button[data-v-54cdc180]:hover {\n    opacity: 0.8;\n}\n.card .body[data-v-54cdc180] {\n    font-size: 16px;\n    width: 100%;\n    word-wrap: break-word;\n    font-family: \"\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4   Pro W3\", \"Hiragino Kaku Gothic Pro\", \"\\30E1\\30A4\\30EA\\30AA\", Meiryo, Osaka, \"\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF\", \"MS PGothic\", sans-serif;\n}\n.card .arrows[data-v-54cdc180] {\n    display: flex;\n    justify-content: space-between;\n    position: absolute;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n}\n.card .arrows .arrow[data-v-54cdc180] {\n      margin: 15px 10px 5px;\n      font-size: 14px;\n      color: #cc003F;\n      cursor: pointer;\n}\n.card .arrows .arrow[data-v-54cdc180]:hover {\n      opacity: 0.8;\n}\n.card .arrows .arrow.disabled[data-v-54cdc180] {\n      color: #bbb;\n      pointer-events: none;\n}\n.card[data-v-54cdc180]:last-child {\n  margin-bottom: 0;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n.cardArea[data-v-54cdc180] {\n  witdh: auto;\n}\n.card[data-v-54cdc180] {\n  margin: 10px 0 18px;\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding: 10px 12px 25px;\n  background-color: #fff;\n  border-radius: 4px;\n  width: calc(100% - 24px);\n  min-height: 30px;\n  cursor: pointer;\n}\n.card .close-button img[data-v-54cdc180] {\n    position: absolute;\n    display: block;\n    width: 14px;\n    top: 6px;\n    right: 6px;\n    font-size: 22px;\n    opacity: 0.8;\n    cursor: pointer;\n}\n.card .close-button[data-v-54cdc180]:hover {\n    opacity: 0.8;\n}\n.card .body[data-v-54cdc180] {\n    font-size: 16px;\n    width: 100%;\n    word-wrap: break-word;\n    font-family: \"\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4   Pro W3\", \"Hiragino Kaku Gothic Pro\", \"\\30E1\\30A4\\30EA\\30AA\", Meiryo, Osaka, \"\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF\", \"MS PGothic\", sans-serif;\n}\n.card .arrows[data-v-54cdc180] {\n    display: flex;\n    justify-content: space-between;\n    position: absolute;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n}\n.card .arrows .arrow[data-v-54cdc180] {\n      margin: 0 -7px;\n      font-size: 16px;\n      color: #ffb241;\n      cursor: pointer;\n      transform: scale(1, 1.5);\n      padding: 1px 8px 2px;\n      transition: .2s;\n}\n.card .arrows .arrow[data-v-54cdc180]:hover {\n      cursor: pointer;\n      background: rgba(236, 244, 251, 0.84);\n}\n.card .arrows .arrow.disabled[data-v-54cdc180] {\n      color: #bbb;\n      pointer-events: none;\n}\n.card[data-v-54cdc180]:last-child {\n  margin-bottom: 0;\n}\n", ""]);
 
 // exports
 
@@ -22491,7 +22529,7 @@ var render = function() {
             staticClass: "close-button",
             on: { click: _vm.removeCardFromList }
           },
-          [_c("img", { attrs: { src: "/img/close16.png", alt: "" } })]
+          [_c("img", { attrs: { src: "img/close16.png", alt: "" } })]
         ),
         _vm._v(" "),
         _c("div", { staticClass: "body" }, [
@@ -22728,7 +22766,7 @@ var render = function() {
       _c(
         "div",
         { staticClass: "close-button", on: { click: _vm.removeList } },
-        [_c("img", { attrs: { src: "/img/close16.png", alt: "" } })]
+        [_c("img", { attrs: { src: "img/close16.png", alt: "" } })]
       ),
       _vm._v(" "),
       _c("div", { staticClass: "title" }, [
@@ -22968,7 +23006,9 @@ var staticRenderFns = [
     return _c("header", [
       _c("a", { attrs: { href: "#" } }, [
         _c("h1", { staticClass: "logo" }, [_vm._v("脳内会議 5W1H")])
-      ])
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "clear" } }, [_vm._v(" 初期化 ")])
     ])
   }
 ]
@@ -23144,11 +23184,6 @@ store.subscribe(function (mutation, _ref6) {
 });
 
 exports.default = store;
-
-// document.querySelector(".delete").onclick = function() {
-//   alert();
-// localStorage.clear();
-// };
 
 /***/ })
 /******/ ]);

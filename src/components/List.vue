@@ -1,7 +1,7 @@
 <template>
 <div class="list" @dragover.prevent>
   <div class="close-button" @click="removeList">
-    <img src="/img/close16.png" alt="">
+    <img src="img/close16.png" alt="">
   </div>
   <div class="title">
     {{ title }}
@@ -35,9 +35,8 @@ const List = {
   },
   methods: {
     removeList() {
-
-      var listIndex = this.index;
-      var check = confirm('追加リスト以外の削除を行うと他のリストも削除される事があります。本当に削除しますか？');
+      //var listIndex = this.index;
+      var check = confirm('他のリストも削除される事があります。削除しますか？');
       if (check === true) {
         this.$store.commit(types.REMOVE_LIST, {
           listIndex: this.index

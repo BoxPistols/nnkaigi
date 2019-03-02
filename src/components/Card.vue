@@ -3,7 +3,7 @@
   <div class="card" draggable="true" @drop="onDrop" @dragstart="onDragStart" @dragover.prevent>
 
     <div class="close-button" @click="removeCardFromList">
-      <img src="/img/close16.png" alt="">
+      <img src="img/close16.png" alt="">
     </div>
 
     <div class="body">
