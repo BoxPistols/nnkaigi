@@ -22491,7 +22491,7 @@ var render = function() {
             staticClass: "close-button",
             on: { click: _vm.removeCardFromList }
           },
-          [_c("img", { attrs: { src: "img/close16.png", alt: "" } })]
+          [_c("img", { attrs: { src: "/img/close16.png", alt: "" } })]
         ),
         _vm._v(" "),
         _c("div", { staticClass: "body" }, [
@@ -22728,7 +22728,7 @@ var render = function() {
       _c(
         "div",
         { staticClass: "close-button", on: { click: _vm.removeList } },
-        [_c("img", { attrs: { src: "img/close16.png", alt: "" } })]
+        [_c("img", { attrs: { src: "/img/close16.png", alt: "" } })]
       ),
       _vm._v(" "),
       _c("div", { staticClass: "title" }, [

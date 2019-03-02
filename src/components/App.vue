@@ -4,6 +4,8 @@
     <a href="#">
       <h1 class="logo">脳内会議 5W1H</h1>
     </a>
+    <div id="clear"> 初期化 </div>
+    <!-- /#del -->
   </header>
   <main>
     <list v-for="({ title, cards }, index) in lists" :title="title" :cards="cards" :index="index"></list>
@@ -113,6 +115,16 @@ h4 {
         padding: 0 20px;
         column-width: 270px;
         column-gap: 1em;
+    }
+    #clear{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+      border: 1px solid #cde;
+      color: #cde;
+      padding: 10px 25px;
+      border-radius: 3px;
     }
 }
 </style>

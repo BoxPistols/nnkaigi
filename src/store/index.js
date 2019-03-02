@@ -169,8 +169,3 @@ store.subscribe((mutation, {
 });
 
 export default store;
-
-// document.querySelector(".delete").onclick = function() {
-//   alert();
-// localStorage.clear();
-// };

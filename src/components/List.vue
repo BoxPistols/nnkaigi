@@ -73,7 +73,7 @@ export default List;
     background-color: rgb(191, 237, 162);
     height: 100%;
     max-height: 100vh;
-    display: block;
+    // display: block;
   }
   &:nth-child(2){
     // color: orange;
